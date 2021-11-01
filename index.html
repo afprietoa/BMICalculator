@@ -1,0 +1,95 @@
+  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+    <link rel="stylesheet" href="./style/style.css">
+		<title>CALCULADORA IMC</title>
+	</head>
+
+	<body>
+		<div>
+            <section class="title"> <h2>Calculadora IMC</h2> </section>
+      
+			<p class="text">Edad</p>
+			<input type="tex"  id="age" placeholder="2-120">
+
+			<p class="text">Género</p>
+			
+
+			
+                <input type="radio" name="gender" id="male" class="radio-button" value="Hombre" checked>
+                <label for="male" class="radio-icon-label"><img src="icons/men.png" alt=""
+                    class="radio-icon"></label>
+                <input type="radio" name="gender" id="female" class="radio-button" value="Mujer" checked>
+                <label for="female" class="radio-icon-label"><img src="icons/women.png" alt=""
+                    class="radio-icon"></label>
+              
+			<!------------------------------------					
+			<input type="radio" name="gender" id="male" value="Hombre" checked>
+			<label for="male">Masculino</label>                 
+									
+			<input type="radio" name="gender" id="female" value="Mujer" checked>
+			<label for="female">Femenino</label>
+
+			---------------------------------------->
+			
+								
+					<p class="text">Altura</p>
+					<input type="text" id="height" placeholder="cm">
+					<p class="text">Peso</p>
+					<input type="text" id="weight" placeholder="kg">
+					<p id="result"></p>
+					<button id="btn" onClick="BMI()">Calcular</button>
+					<p id="info">Por favor ingrese la altura [cm] y el peso [kg]</p>
+
+
+
+					<!----------------------------------------------------------------------->
+					<!------------------------------------------------------------------------>
+
+					
+					<!----------------------------------------------------------------------->
+					<!------------------------------------------------------------------------>	
+					<h4 id="imcData">IMC: </h4>
+					<section id="imcContainer">
+						<section id="IMCbar"></section>
+					</section>
+
+					<!----------------------------------------------------------------------->
+					<!------------------------------------------------------------------------>	
+					
+					<section class="category">
+						<section class="category-item">
+							<img src="./icons/weighing-scale.svg" alt="" id="underweight">
+							<p>Bajo Peso - por debajo de 18.5</p>
+						</section>
+						<section class="category-item">
+							<img src="./icons/weighing-scale.svg" alt="" id="normal">
+							<p>Saludable - entre 18.5 y 24.9</p>
+						</section>
+						<section class="category-item">
+							<img src="./icons/weighing-scale.svg" alt="" id="overweight">
+							<p>Exceso de Peso - entre 25 y 29.9</p>
+						</section>
+						<section class="category-item">
+							<img src="./icons/weighing-scale.svg" alt="" id="obese" >
+							<p>Obeso - de 30 en adelante</p>
+						</section>
+					</section>
+					
+
+
+
+	
+  		</div>
+		  
+    	<script src="./script/script.js"></script>
+	</body>
+	
+</html>
